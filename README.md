@@ -54,7 +54,7 @@ ggplot(null_distn, aes(x = stat)) +
   annotate("text", x = .73, y = 1000, label = "2019 offensive\ncoach percentage")
 ```
 
-<img src="README_files/figure-markdown_github/simulation-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="\simulation-1.png" width="70%" style="display: block; margin: auto;" />
 
 A percentage of **62.5%** does seem a little unusal. But just how unusal? We can calculate the percentage of simulations that produced a value as extreme or more than our 2019 observed statistic and that becomes our p-value. We multiple our finding by 2 to test both sides of the tail to confirm that there isn't a preference for hiring defensive coaches either.
 
