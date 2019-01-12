@@ -38,7 +38,7 @@ Perfect, this sets up our hypothesis test. Per an article written recently by [C
 So now we have the basis for our hypothesis test:
 
  * H0: Preference for selecting offensive coaches is 50%
- * H1: Perefernce for selecting offensive coaches is not 50%
+ * H1: Preference for selecting offensive coaches is not 50%
 
 
 To test our hypothesis, we are going to build a dataset of offensive and defensive coaches for 2019. 
@@ -74,7 +74,7 @@ ggplot(null_distn, aes(x = stat)) +
     title = "Simulation of NFL Head Coach Selection",
     subtitle = "Assumes 50% chance of offensive specialty",
     x = "Offensive Coach Percentage",
-    y = "Simuation Trials"
+    y = "Simulation Trials"
   ) +
   annotate("text", x = .73, y = 1000, label = "2019 offensive\ncoach percentage")
 ```

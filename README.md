@@ -15,7 +15,7 @@ Perfect, this sets up our hypothesis test. Per an article written recently by [C
 So now we have the basis for our hypothesis test:
 
 -   H0: Preference for selecting offensive coaches is 50%
--   H1: Perefernce for selecting offensive coaches is not 50%
+-   H1: Preference for selecting offensive coaches is not 50%
 
 To test our hypothesis, we are going to build a dataset of offensive and defensive coaches for 2019.
 
@@ -49,12 +49,12 @@ ggplot(null_distn, aes(x = stat)) +
     title = "Simulation of NFL Head Coach Selection",
     subtitle = "Assumes 50% chance of offensive specialty",
     x = "Offensive Coach Percentage",
-    y = "Simuation Trials"
+    y = "Simulation Trials"
   ) +
   annotate("text", x = .73, y = 1000, label = "2019 offensive\ncoach percentage")
 ```
 
-<img src="\simulation-1.png" width="70%" style="display: block; margin: auto;" />
+<img src="README_files/figure-markdown_github/simulation-1.png" width="70%" style="display: block; margin: auto;" />
 
 A percentage of **62.5%** does seem a little unusal. But just how unusal? We can calculate the percentage of simulations that produced a value as extreme or more than our 2019 observed statistic and that becomes our p-value. We multiple our finding by 2 to test both sides of the tail to confirm that there isn't a preference for hiring defensive coaches either.
 
@@ -68,6 +68,6 @@ p_val
     ## # A tibble: 1 x 1
     ##   p_value
     ##     <dbl>
-    ## 1   0.213
+    ## 1   0.212
 
-For our experiment, we see a value as extreme or more oftern about **21.3%** of the time. Looking at it this way, while NFL head coaches may be trending more offensively, it doesn't seem THAT unusual.
+For our experiment, we see a value as extreme or more oftern about **21.2%** of the time. Looking at it this way, while NFL head coaches may be trending more offensively, it doesn't seem THAT unusual.
