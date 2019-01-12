@@ -54,7 +54,7 @@ coaches <- data_frame(
 
 Next we will use the `infer` package within the `tidymodels` package to simulate a null universe where offensive and defensive coaches have a 50/50 chance of being assigned to an NFL team. We then compare our observed 2019 offensive coach percentage to what we would see in the null universe across 10,000 simulations. 
 
-```{r}
+```{r simulation}
 p_hat <- coaches %>%
   summarize(mean(specialty == "offensive")) %>%
   pull()
